@@ -1,0 +1,19 @@
+/* src/index.css */
+/* Estilos globales básicos y reseteo */
+* {
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho/alto total */
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Muy importante: asegura que html, body y el root de React ocupen el 100% del alto */
+  width: 100%; /* Asegura que ocupen el 100% del ancho */
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* Color de fondo general de la aplicación */
+  color: #333; /* Color de texto base */
+}
+
+/* Puedes añadir más estilos de reseteo o globales aquí si lo deseas */

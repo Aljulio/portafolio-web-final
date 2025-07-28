@@ -1,0 +1,108 @@
+/* src/components/TaskCard.css */
+.task-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px; /* Padding general */
+  margin-bottom: 15px; /* Importante para que las tarjetas se apilen con espacio */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.task-card:last-child {
+  margin-bottom: 0; /* Elimina el margen inferior de la última tarjeta */
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task-title {
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Empuja el título y el grupo de fecha/flecha a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  color: #333;
+}
+
+.task-title:hover {
+  color: #007bff;
+}
+
+/* NUEVO: Contenedor para la fecha y el indicador de expansión */
+.task-meta {
+  display: flex; /* Convierte este contenedor en flex para alinear la fecha y la flecha */
+  align-items: center; /* Centra verticalmente la fecha y la flecha entre sí */
+  gap: 8px; /* Espacio entre la fecha y la flecha */
+}
+
+.task-date {
+  font-size: 0.9em;
+  color: #666;
+  /* margin-left: ya no es necesario aquí */
+}
+
+.expand-indicator {
+  font-size: 0.8em;
+  color: #888;
+  /* margin-left: ya no es necesario aquí, lo maneja el 'gap' del .task-meta */
+}
+
+.task-details-content {
+  border-top: 1px dashed #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.task-details-content p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.task-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-links li {
+  margin-bottom: 5px;
+}
+
+.task-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.task-links a:hover {
+  text-decoration: underline;
+}
+
+/* --- Media Queries para Responsividad --- */
+
+/* Ajustes para pantallas con un ancho máximo de 768px (móviles y tablets pequeñas) */
+@media (max-width: 768px) {
+  .task-card {
+    padding: 12px; /* Reduce el padding de las tarjetas */
+    margin-bottom: 10px; /* Reduce el margen entre tarjetas */
+  }
+  .task-title {
+    font-size: 1em; /* Reduce el tamaño del título de la tarea */
+    margin-bottom: 8px;
+  }
+  .task-date {
+    font-size: 0.8em; /* Reduce el tamaño de la fecha */
+  }
+  .expand-indicator {
+    font-size: 0.7em; /* Reduce el tamaño del indicador */
+  }
+  .task-details-content {
+    padding-top: 10px; /* Reduce el padding superior del contenido desplegado */
+    margin-top: 10px; /* Reduce el margen superior del contenido desplegado */
+  }
+  .task-details-content p,
+  .task-links {
+    font-size: 0.9em; /* Reduce el tamaño de la fuente del contenido */
+  }
+}

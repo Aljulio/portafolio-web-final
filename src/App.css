@@ -1,0 +1,119 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor de la app ocupe al menos el alto de la vista */
+}
+
+.app-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* main-content-wrapper: Centra el contenido principal y le da un ancho máximo */
+.main-content-wrapper {
+  max-width: 1200px; /* Ancho máximo para el contenido en pantallas grandes */
+  width: 100%; /* Asegura que en pantallas pequeñas ocupe el 100% del ancho disponible del padre */
+  margin: 20px auto; /* Centra horizontalmente y da margen superior/inferior */
+  padding: 0; /* Elimina el padding de los 4 lados */
+  flex: 1; /* Permite que este wrapper se expanda y ocupe el espacio disponible */
+
+  display: flex; /* Convierte este wrapper en un contenedor flex para la Sidebar y la lista de tareas */
+  gap: 20px; /* Espacio entre la Sidebar y la lista de tareas */
+}
+
+/* Sidebar: Mantener su ancho fijo en escritorio */
+.sidebar {
+  width: 250px;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Impide que la barra lateral se encoja */
+}
+
+/* task-list-container: Que ocupe el espacio restante */
+.task-list-container {
+  flex: 1; /* Permite que la lista de tareas ocupe el espacio restante */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-list-container h2 {
+  margin-top: 0;
+  color: #007bff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center; /* ¡ESTE ES EL CAMBIO AÑADIDO! */
+}
+
+.no-tasks-message {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* --- Media Queries para Responsividad --- */
+
+/* Ajustes para pantallas con un ancho máximo de 768px (típicamente móviles y tablets pequeñas) */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 15px; /* Reduce el padding del encabezado en móviles */
+  }
+
+  .app-header h1 {
+    font-size: 1.5em; /* Reduce el tamaño del título del portafolio en móviles */
+  }
+
+  /* Ajustar el wrapper del contenido principal para móvil */
+  .main-content-wrapper {
+    flex-direction: column; /* Apila la barra lateral y el contenido principal */
+    padding: 10px; /* Mantiene un padding de 10px en móviles para que no se pegue tanto */
+    margin: 10px auto; /* Reduce el margen superior/inferior */
+    gap: 10px; /* Reduce el espacio entre elementos apilados */
+  }
+
+  .sidebar {
+    width: 100%; /* La barra lateral ocupa todo el ancho en móviles */
+    margin-bottom: 10px; /* Añade un margen inferior para separarlo del contenido */
+    padding: 15px; /* Ajusta el padding de la barra lateral en móviles */
+  }
+
+  .sidebar h3 {
+    font-size: 1.1em; /* Reduce el tamaño del título de filtro */
+    margin-bottom: 10px;
+  }
+
+  .category-button {
+    font-size: 0.95em; /* Ligeramente más pequeño en móviles */
+    padding: 8px 12px;
+  }
+
+  .task-list-container {
+    padding: 15px; /* Reduce el padding del contenedor de tareas */
+  }
+
+  .task-list-container h2 {
+    font-size: 1.3em; /* Reduce el tamaño del subtítulo de tareas */
+    margin-bottom: 15px;
+  }
+}
