@@ -30,10 +30,10 @@ export const tasks = [
   },
   {
     id: 3,
-    title: "Notas del curso de React Hooks",
-    category: "Notas y Apuntes",
-    date: "2025-07-28", // Ya en YYYY-MM-DD
-    description: "Resumen y ejemplos prácticos de los principales React Hooks (useState, useEffect, useContext, etc.).",
+    title: "Formulario",
+    category: "Proyectos React",
+    date: "2025-08-01", // Ya en YYYY-MM-DD
+    description: "Elabore el siguiente formulario web utilizando React, Node.js",
     links: [
       { name: "Leer Notas", url: "#" }
     ]
