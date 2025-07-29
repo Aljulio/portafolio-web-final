@@ -1,0 +1,44 @@
+/* src/components/ExpandableInfoCard.css */
+.expandable-info-card {
+  background-color: #f8f9fa; /* Un color ligeramente diferente para distinguirlo */
+  border: 1px solid #cce5ff; /* Borde azul claro */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px; /* Espacio entre esta tarjeta y las TaskCards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.expandable-info-card-header {
+  display: flex;
+  /* Centrar el contenido horizontalmente en el header */
+  justify-content: center; /* <--- CAMBIO AQUÍ: Ahora el contenido se centrará */
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.expandable-info-card-title {
+  margin: 0;
+  color: #007bff;
+  font-size: 1.2em;
+  /* ELIMINAR O COMENTAR flex-grow: 1; para que el título no ocupe todo el espacio si no queremos */
+  /* flex-grow: 1; */ 
+  text-align: center; /* <--- AÑADIDO: Centra el texto dentro del título, si tuviera espacio extra */
+}
+
+.expandable-info-card-toggle-icon {
+  font-size: 1.2em;
+  color: #6c757d;
+  transition: transform 0.3s ease-in-out;
+  /* Si el icono está centrado con el texto, considera un margen para separarlo un poco */
+  margin-left: 10px; /* <--- OPCIONAL: Para separar el icono del texto centrado */
+}
+
+.expandable-info-card-content {
+  padding-top: 15px;
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
