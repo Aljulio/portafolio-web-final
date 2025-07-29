@@ -35,7 +35,8 @@ export const tasks = [
     date: "2025-08-01", // Ya en YYYY-MM-DD
     description: "Elabore el siguiente formulario web utilizando React, Node.js",
     links: [
-      { name: "Leer Notas", url: "#" }
+      { name: "Ver Proyecto", url: "https://aljulio.github.io/Formulario-/" }, // <-- Nuevo enlace
+      { name: "Ver en GitHub", url: "https://github.com/Aljulio/Formulario-/deployments/github-pages" } // <-- Nuevo enlace
     ]
   },
   {
