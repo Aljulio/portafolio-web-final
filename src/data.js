@@ -30,13 +30,14 @@ export const tasks = [
   },
   {
     id: 3,
-    title: "Formulario",
+    title: "Formulario e Informe",
     category: "Proyectos React",
     date: "2025-08-01", // Ya en YYYY-MM-DD
     description: "Elabore el siguiente formulario web utilizando React, Node.js",
     links: [
-      { name: "Ver Proyecto", url: "https://aljulio.github.io/Formulario-/" }, // <-- Nuevo enlace
-      { name: "Ver en GitHub", url: "https://github.com/Aljulio/Formulario-/deployments/github-pages" } // <-- Nuevo enlace
+      { name: "Ver Proyecto", url: "https://aljulio.github.io/Formulario-/" },
+      { name: "Ver en GitHub", url: "https://github.com/Aljulio/Formulario-" },
+      { name: "Ver en GitHub 2", url: "https://github.com/Aljulio/Formulario-Server-Firebase" },
     ]
   },
   {
