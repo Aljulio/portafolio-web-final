@@ -1,0 +1,61 @@
+/* src/components/Glosario.css */
+.glosario-container {
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.initials-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.initial-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: bold;
+}
+
+.initial-button:hover {
+  background-color: #e0e0e0;
+}
+
+.initial-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.term-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.term-title {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.term-definition {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
