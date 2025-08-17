@@ -1,0 +1,111 @@
+/* src/components/Investigacion.css */
+.investigacion-container {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para el botón principal "Informe" */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease;
+    border-radius: 5px 5px 0 0;
+}
+
+.section-header:hover {
+    background-color: #e2e6ea;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin: 0;
+}
+
+.expand-icon {
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Contenedor para todas las subsecciones */
+.informe-content {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Estilos para cada subsección individual */
+.investigacion-seccion {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.subsection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.subsection-header:hover {
+    background-color: #e9ecef;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    color: #0056b3;
+    margin: 0;
+}
+
+.subsection-content {
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* Estilos para elementos internos del contenido */
+.subsection-content h4 {
+    font-size: 1.2rem;
+    color: #004085;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.subsection-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.subsection-content ul li {
+    background-color: #f0f0f5;
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: 1px solid #e0e0e5;
+    margin-bottom: 5px;
+}
+
+.subsection-content pre {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
