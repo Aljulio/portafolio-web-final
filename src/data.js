@@ -336,12 +336,22 @@ export const tasks = [
   },
   {
     id: 5,
-    title: "Consumo de API REST con Fetch",
-    category: "Proyectos React",
-    date: "2025-08-05",
-    description: "Ejemplo de cómo consumir datos de una API REST pública usando la API Fetch en React.",
+    title: "API",
+    category: "Todos",
+    date: "2025-08-22",
+    description: "Desarrollar una API REST en TypeScript + Express que implemente CRUD y flujo básico de aprobación para Expedientes e Indicios.",
     links: [
-      { name: "Ver Proyecto", url: "https://github.com/tu-usuario/api-fetch-react" }
+      { name: "Ver Proyecto", url: "https://github.com/Aljulio/API-de-Gesti-n-de-Expedientes-e-Indicios.git" }
+    ]
+  },
+  {
+    id: 6,
+    title: "Frontend del API",
+    category: "Proyectos React",
+    date: "2025-08-29",
+    description: "Construir una SPA en React (Vite + TypeScript) para técnicos y coordinadores que permita autenticarse con JWT, gestionar Expedientes e Indicios, y realizar aprobación/rechazo según rol.",
+    links: [
+      { name: "Ver Proyecto", url: "https://github.com/Aljulio/frontend-expedientes" }
     ]
   }
 ];
